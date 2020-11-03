@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>temp</title>
+    </head>
+
+    <body>
+        <!--ways of specifying the url of the audio file being used 
+        using the src attribute: drawback not all audio types are equally
+        supported by each browser
+        the other mehtod is using the sorce elements
+        addeed betweeen the audio start and end tags. -->
+
+        <!-- method 1 src not good -->
+
+       <!-- <audio src="bell_audio.mp3" controls>
+            audio element not supported by your browser 
+        </audio>-->
+
+        <!--Method 2 source -->
+        <!--can specify multiple source files and thus multiple audio
+        files -->
+       <!--<audio controls>
+            <source src="bell_audio.mp3" type="audio/mpeg"> good for chrome safari
+            <source src="bell_audio.ogg" type="audio/ogg" other ones but not safari
+        </audio>-->
+
+        <!-- type attribute helps browser pick which one to load 
+        so it donest load all of them speeds things up-->
+
+        <!-- example -->
+        <!-- the controls is actually an attribute, which is what 
+        allows you to see and interact with the audio control bar
+        you can also add the auto play atribute
+        there is also a loop attribute -->
+        <audio controls autoplay loop>
+            <source src="poof.mp3" type="audio/mpeg">
+            <source src="poof.ogg" type="audio/ogg">
+                Audio element not supported by your browser.
+        </audio>
+
+
+        <!-- video files are the same -->
+        <video controls>
+            <source src="boof.mp4" type="video/mp4">
+            <source src="boof.ogg" type="video/ogg">
+            Video element not supported by your browser.
+        </video>
+    </body>
+
+</html>

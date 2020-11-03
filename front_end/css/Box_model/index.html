@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <!--SWITCH CLASSES IF YOU WANNA SEE DIFFERENT EFFECTS-->
+        <style type="text/css">
+            .tst1{
+                padding: 40px; background-color: orange;
+            }
+            .tst2 {
+                padding: 40px; 
+                background-color: orange;
+                margin: 0px;
+            }
+            .tst3 {
+                padding: 40px; 
+                background-color: orange;
+                margin: 0px;
+                border: thick dashed red;
+            }
+            .tst4{
+                padding: 40px; 
+                background-image: url("images.jpg");
+                margin: 5px;
+                border: thick dashed red;
+            }
+        </style>
+    </head>
+
+    <!--OK so the css box model demistifies a lot of stuff
+    content is in center, next is padding, next is border, margin is last
+    outermost ring-->
+
+    <!--Content: area is wehre the element's contents are placed, includes 
+    text images etc...
+
+    Padding: this area seperates teh content from the border, size of this area
+    can be set to 0
+
+    Border: this area is where a box border is located. Different border styles
+    (solid, dashed dottted etc...) can be specified but the border itself
+    is optional
+
+    margin: this area seperats the border from teh outside of the box.
+    this size can be set to 0-->
+
+    <!--Css also has contros for the background of the box
+    background can be images or whatever. This is displayed in teh padding
+    area ofthe css box-->
+    <body>
+        <div>
+            <h2 class="tst4">
+                the padding is set with a single value. When the text reaches 
+                the right area, it will wrap around instaed of entering the padding area.
+            </h2>
+            <img class="tst3" src="images.jpg" alt="dog"/>
+        </div>
+    </body>
+</html>

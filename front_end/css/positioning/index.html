@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <style type="text/css">
+        div{
+            position:relative; 
+            border:thin solid; 
+            background-color: lime; 
+            margin-bottom: 10px;
+        }
+        h1{
+            border: thin solid; 
+            background-color: yellow;
+            font-size: 28px;
+        }
+        p{
+            border:thin solid; 
+            background-color: #CCCCCC;
+        }
+        #tst1{position: static;}
+        #tst2{position: relative;top: 20px; left: 50px;}
+        #tst3{position: absolute; top: 30px; left: 20px}
+        #tst4{position: fixed; top: 325px; left: 60px;}
+        </style>
+
+    </head>
+
+
+    <!--littlewebhut.com position property-->
+
+    <!--positioning is an attribute and there are a few of them, 
+    static relative, absolute, fixed or inherit(just means use the one 
+    in the parent element-->
+
+    <!--static: elements box is laid out automatically accroding to the normal flow
+    relative: the position of the elements box is relative to its norm-->
+
+    <!--Note that each p element has a different id so that 
+    each p element will have a different positoning style -->
+
+    <!--static allows things to follow normal flow, which is the order that the 
+    appear in in the html code-->
+    <body>
+        <div>
+            <p id="tst1">This text box position = static</p>
+            <h1>This text box follows the static positioned text box.</h1>
+        </div>
+
+        <div>
+            <p id="tst2">This text box position = relative top=20px left = 50px</p>
+            <h1>This text box follows the relative positioned text box.</h1>
+        </div>
+
+        <div>
+            <p id="tst3">This text box position = absolute top=30px, left=20px</p>
+            <h1>This text box follows the absolute positioned text box.</h1>
+        </div>
+
+        <div>
+            <p id="tst4">This text box position = fixed. This box will 
+                not move when the test window is scrolled</p>
+            <h1>This text box follows the fixed positioned text box.</h1>
+        </div>
+
+    </body>
+</html>

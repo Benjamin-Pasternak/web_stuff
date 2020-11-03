@@ -1,0 +1,17 @@
+tag
+<title>
+
+
+element
+<title> example document</title>
+has a start tag, end tag and stuff in between 
+some elements have opnly a start tag ex <br> new line?? or line break
+
+attribute
+attributes have start and end and ocntent however theyalso have 
+more information contained within 
+<h1 id="main"> Main Section </h1>
+
+attribute = id="main"
+attribute nbame = id
+value is in quotations ""

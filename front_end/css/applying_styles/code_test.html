@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- so there are a few ways to apply css to html tags 
+1 is directly to the tag as shown below-->
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>css_test</title>
+        <!--Second method of injecting css is to put it in a style tag
+        and put it in header -->
+        <!--justify means it will be alligned on left and right sides-->
+        <style type="text/css">
+        h1 {text-align: right; color: red;}
+        p{text-align: justify;}
+        div{text-align: center;}
+        </style>
+
+        <!--third method is to use external style sheet
+        to do this you need to place a link tag
+        containing href, rel="stylesheet" and type="text/css"-->
+        <link href="sample_css.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+        <header>
+            <!--This style is applied directly to the html tag
+            color is the property, specifies what we are controlling
+            -->
+            <h1 style="color: red; text-align: center;" >Test String.!</h1>
+            <h1>poof</h1>
+            <p>your mom 2020</p>
+            <div>poofier</div>
+        </header>
+    </body>
+</html>
